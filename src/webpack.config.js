@@ -2,7 +2,7 @@ const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path')
 
 const config = {
-  mode: "development",
+  mode: "production",
   // Update the entry point
   entry:{
      app: '/index.js',
