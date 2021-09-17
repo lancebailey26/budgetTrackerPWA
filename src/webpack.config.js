@@ -29,8 +29,8 @@ const config = {
   },
   plugins: [
       new WebpackPwaManifest({
-    name: 'Budget Tracker',
-    description: 'a simple budget tracker PWA',
+    name: 'budgetTracker',
+    description: 'a simple budgetTracker PWA',
     inject:false,
     fingerprints:false,
     start_url: '/',
