@@ -1,16 +1,18 @@
 const WebpackPwaManifest = require('webpack-pwa-manifest');
-
+const path = require('path')
 
 const config = {
-  mode: 'development',
+  mode: "development",
   // Update the entry point
-  entry: './index.js',
+  entry:{
+     app: '/index.js',
+     db :'./db.js'
+  },
   output: {
     // Set the path and filename for the output bundle (hint: You will need to use "__dirname")
-    path: __dirname + './dist',
-    filename: "bundle.js"
+    path: __dirname + '/dist',
+    filename: "[name].bundle.js"
   },
- 
   module: {
     rules: [
       {
@@ -31,6 +33,9 @@ const config = {
     description: 'a simple budget tracker PWA',
     inject:false,
     fingerprints:false,
+    start_url: '/',
+    background_color: '#01579b',
+      theme_color: '#ffffff',
   })]
 };
 

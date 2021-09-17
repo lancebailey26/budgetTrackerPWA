@@ -1,5 +1,6 @@
 let transactions = [];
 let myChart;
+import {saveRecord} from './db'
 
 fetch("/api/transaction")
   .then(response => {
@@ -143,6 +144,7 @@ function sendTransaction(isAdding) {
     amountEl.value = "";
   });
 }
+
 
 document.querySelector("#add-btn").onclick = function() {
   sendTransaction(true);

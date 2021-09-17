@@ -3,6 +3,8 @@
   "short_name": "Budget Tracker",
   "orientation": "portrait",
   "display": "standalone",
-  "start_url": ".",
-  "description": "a simple budget tracker PWA"
+  "start_url": "/",
+  "description": "a simple budget tracker PWA",
+  "background_color": "#01579b",
+  "theme_color": "#ffffff"
 }
