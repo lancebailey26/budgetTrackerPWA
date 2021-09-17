@@ -1,0 +1,10 @@
+{
+  "name": "budgetTracker",
+  "short_name": "budgetTracker",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "/",
+  "description": "a simple budgetTracker PWA",
+  "background_color": "#01579b",
+  "theme_color": "#ffffff"
+}
