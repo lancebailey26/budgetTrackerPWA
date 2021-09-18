@@ -78,6 +78,18 @@ function populateChart() {
   });
 }
 
+const saveRecord = (record) => {
+  console.log('Save record invoked');
+  // Create a transaction on the budget db with readwrite access
+  const transaction = db.transaction([''], 'readwrite');
+
+  // Access your budget object store
+  const store = transaction.objectStore('budget');
+
+  // Add record to your store with add method.
+  store.add(record);
+};
+
 function sendTransaction(isAdding) {
   let nameEl = document.querySelector("#t-name");
   let amountEl = document.querySelector("#t-amount");
