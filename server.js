@@ -13,7 +13,7 @@ app.use(compression());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static("src"));
+app.use(express.static("public"));
 
 mongoose.connect(process.env.MONGDB_URI || "mongodb://localhost/budget", {
   useNewUrlParser: true,
